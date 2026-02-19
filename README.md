@@ -1,16 +1,14 @@
-## Hi there 👋
+# Hi, I'm Albert Vila 👋
 
-<!--
-**noktor/noktor** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Senior Fullstack Engineer | 11+ Years | MongoDB Specialist**
 
-Here are some ideas to get you started:
+I’m a creator at heart, driven by the curiosity of "how things work" since the days of early web chats. 
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 🚀 Featured Projects
+* **[E-commerce Store](https://noktor-store.netlify.app/):** A full-stack powerhouse with a Swagger-documented API and MongoDB.
+* **[Snake Wars](https://competent-bhabha-e702ed.netlify.app/):** A logic-heavy monorepo project.
+
+### 🛠 Tech Stack
+* **Languages:** TypeScript, JavaScript (Node.js/React/Vue)
+* **Databases:** MongoDB (Expert, 9 years), MySQL/PostgreSQL
+* **Cloud & DevOps:** AWS, Terraform, Docker, CI/CD
