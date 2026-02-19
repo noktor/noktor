@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Albert Vila Canela - CV</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/favicon.png" />
+<style>
+  :root {
+    --bg: #f4f9f4;
+    --text: #2e3a2e;
+    --primary: #86c06c; /* pistachio header/skill bar */
+    --section-bg: #ffffff;
+    --hover-bg: #d9f0d9;
+    --btn-bg: #a8d5a2; /* pistachio buttons */
+    --btn-hover: #8cc78f;
+  }
+  [data-theme="dark"] {
+    --bg: #1e1e1e;
+    --text: #f0f0f0;
+    --primary: #a0d582;
+    --section-bg: #2a2a2a;
+    --hover-bg: #3a3a3a;
+    --btn-bg: #76b06d;
+    --btn-hover: #5e9957;
+  }
+
+  body { font-family:'Inter',sans-serif; margin:0; background:var(--bg); color:var(--text); transition: background 0.3s, color 0.3s;}
+  .container { max-width:900px; margin:40px auto; background:var(--section-bg); border-radius:12px; padding:30px; box-shadow:0 10px 25px rgba(0,0,0,0.1); transition: background 0.3s; }
+  .header { display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; }
+  .header-left { max-width:70%; }
+  .name { font-size:30px; font-weight:700; color:var(--primary); }
+  .title { font-size:16px; margin:5px 0; color:#555; }
+  .contact { font-size:14px; color:#777; }
+  .contact a { color:var(--primary); text-decoration:none; margin-right:12px; }
+  .photo { width:100px; height:100px; border-radius:50%; box-shadow:0 4px 15px rgba(0,0,0,0.15); object-fit:cover; }
+
+  h2 { color:var(--primary); margin-top:30px; border-bottom:2px solid #eee; padding-bottom:5px; }
+  p { margin:10px 0; }
+  ul { margin:5px 0 15px 20px; }
+  li { margin-bottom:5px; }
+  .skills { display:flex; flex-wrap:wrap; }
+  .skill { width:48%; margin-bottom:10px; }
+  .skill-name { font-weight:600; margin-bottom:5px; }
+  .skill-bar { width:100%; height:10px; background:#eee; border-radius:5px; overflow:hidden; }
+  .skill-bar-fill { height:100%; background:var(--primary); width:0%; border-radius:5px; animation: fill 1s forwards; }
+  @keyframes fill { from {width:0;} to {width: var(--skill-width);} }
+
+  .job-section { margin-bottom:20px; transition: background 0.3s; padding:5px; border-radius:6px; }
+  .job-section:hover { background:var(--hover-bg); }
+  .job-title { font-weight:600; color:var(--text); }
+  .company { font-style:italic; color:#555; }
+  .dates { float:right; color:#777; font-size:13px; }
+  .project { margin-bottom:10px; transition: background 0.3s; padding:5px; border-radius:6px; }
+  .project:hover { background:var(--hover-bg); }
+
+  .dark-toggle { position:fixed; top:20px; right:20px; padding:8px 12px; border:none; border-radius:6px; background:var(--btn-bg); color:#fff; cursor:pointer; z-index:1000; transition: background 0.3s; }
+  .dark-toggle:hover { background:var(--btn-hover); }
+
+  .action-buttons { margin-top:20px; display:flex; gap:15px; flex-wrap:wrap; }
+  .action-buttons a { padding:10px 16px; border-radius:6px; text-decoration:none; color:#fff; font-weight:600; background:var(--btn-bg); transition:background 0.3s; }
+  .action-buttons a:hover { background:var(--btn-hover); }
+
+  @media(max-width:768px){ .header{flex-direction:column;align-items:flex-start;} .photo{margin-top:15px;} .skill{width:100%;} .action-buttons{flex-direction:column;} }
+</style>
+</head>
+<body data-theme="light">
+
+<button class="dark-toggle" onclick="toggleDark()">Toggle Dark Mode</button>
+
+<div class="container">
+
+  <div class="header">
+    <div class="header-left">
+      <div class="name">Albert Vila Canela</div>
+      <div class="title">Senior Fullstack Engineer | 11+ Years | Node.js & TypeScript Expert | MongoDB Specialist</div>
+      <div class="contact">
+        Barcelona, Spain | +34 677 48 08 69 | avilac4@gmail.com<br>
+        <a href="https://linkedin.com/in/albert-vila-93baa9114/" target="_blank">LinkedIn</a>
+        <a href="https://github.com/noktor" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <img src="assets/foto_perfil.png" alt="Albert Vila" class="photo">
+  </div>
+
+  <!-- Action Buttons -->
+  <div class="action-buttons">
+    <a href="assets/resume.pdf" target="_blank">Download Resume (PDF)</a>
+    <a href="mailto:avilac4@gmail.com">Contact Me</a>
+  </div>
+
+  <h2>Professional Summary</h2>
+  <p>Senior Fullstack Engineer with over 11 years of experience designing and scaling web applications and enterprise SaaS platforms. Product-minded creator with deep expertise in the JavaScript/TypeScript ecosystem, specializing in building resilient backends and high-concurrency systems. Proven track record of leading technical migrations and fostering high-performance agile cultures.</p>
+
+  <h2>Technical Skills</h2>
+  <div class="skills">
+    <div class="skill"><div class="skill-name">Node.js, TypeScript, MongoDB, React</div><div class="skill-bar"><div class="skill-bar-fill" style="--skill-width:95%;"></div></div></div>
+    <div class="skill"><div class="skill-name">Express, Event-Driven Arch, Microservices, API Design</div><div class="skill-bar"><div class="skill-bar-fill" style="--skill-width:90%;"></div></div></div>
+    <div class="skill"><div class="skill-name">AWS, Terraform, Docker, Kubernetes, CI/CD</div><div class="skill-bar"><div class="skill-bar-fill" style="--skill-width:85%;"></div></div></div>
+    <div class="skill"><div class="skill-name">Playwright, Jest, Ava</div><div class="skill-bar"><div class="skill-bar-fill" style="--skill-width:80%;"></div></div></div>
+    <div class="skill"><div class="skill-name">AI-assisted development</div><div class="skill-bar"><div class="skill-bar-fill" style="--skill-width:75%;"></div></div></div>
+  </div>
+
+  <h2>Professional Experience</h2>
+  <div class="job-section">
+    <span class="job-title">Senior Fullstack Developer</span> | <span class="company">Benevity</span>
+    <span class="dates">2021 – Present</span>
+    <ul>
+      <li>Architected and maintained a high-concurrency, multi-tenant SaaS platform serving thousands of global users.</li>
+      <li>Spearheaded the migration of a massive legacy JavaScript codebase to TypeScript, significantly increasing system reliability and developer velocity.</li>
+      <li>Designed end-to-end features, from complex service-layer logic to optimized MongoDB schema designs for global scale.</li>
+      <li><strong>Technical Leadership:</strong> Facilitated agile ceremonies and led the onboarding and mentoring of new engineering hires.</li>
+    </ul>
+  </div>
+  <div class="job-section">
+    <span class="job-title">Fullstack Developer</span> | <span class="company">eDreams ODIGEO</span>
+    <span class="dates">2016 – 2021</span>
+    <ul>
+      <li>Engineered core Node.js microservices within a high-traffic travel ecosystem, ensuring low latency and high availability.</li>
+      <li>Built a robust multi-channel communication engine integrating Salesforce Marketing Cloud and Genesys Cloud via REST/SOAP APIs.</li>
+      <li><strong>Internal Automation:</strong> Developed custom tools that automated critical call-center workflows, improving operational efficiency.</li>
+    </ul>
+  </div>
+  <div class="job-section">
+    <span class="job-title">Fullstack Developer</span> | <span class="company">Clintu</span>
+    <span class="dates">2016</span>
+    <ul>
+      <li>Led the strategic database migration from MySQL to MongoDB to support flexible product growth and dynamic data structures.</li>
+      <li>Modernized the backend stack by upgrading legacy services to Node.js and leading software analysis for new features.</li>
+    </ul>
+  </div>
+  <div class="job-section">
+    <span class="job-title">Android & AngularJS Developer</span> | <span class="company">Accenture Spain</span>
+    <span class="dates">2014 – 2016</span>
+    <ul>
+      <li>Developed native and hybrid mobile solutions for top-tier clients in banking, healthcare, and retail sectors.</li>
+      <li>Managed the full development lifecycle, from API consumption (REST/SOAP) to production deployment.</li>
+    </ul>
+  </div>
+
+  <h2>Featured Projects</h2>
+  <div class="project">
+    <strong>Noktor Store (E-commerce Platform):</strong> A production-ready fullstack engine featuring a Swagger-documented Node.js API and a React frontend. Focus on MongoDB aggregation and performance.
+  </div>
+  <div class="project">
+    <strong>Snake Wars (Monorepo):</strong> A logic-heavy game laboratory used to explore Monorepo architectures and modular state management.
+  </div>
+
+  <h2>Education & Languages</h2>
+  <div class="education"><strong>Education:</strong> Specialist in Multimedia & Web Applications Development (DAM & DAW).</div>
+  <div class="languages"><strong>Languages:</strong> Spanish & Catalan (Native), English (Professional Proficiency).</div>
+
+</div>
+
+<script>
+function toggleDark() {
+  const body = document.body;
+  body.setAttribute('data-theme', body.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
+}
+</script>
+
+</body>
+</html>
